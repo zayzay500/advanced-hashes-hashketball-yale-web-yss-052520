@@ -219,9 +219,9 @@ end
 
 def player_stats(player_name)
   game_hash.each_with_object({}) do |(location, team_data), stats|
-    binding.pry
+    # binding.pry
     team_data[:players].each do |player|
-      binding.pry
+      # binding.pry
       if player[:player_name] == player_name
         player.each do |label, data|
           stats[label] = data
