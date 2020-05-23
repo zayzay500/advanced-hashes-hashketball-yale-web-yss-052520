@@ -224,7 +224,7 @@ def player_stats(player_name)
       binding.pry
       if player[:player_name] == player_name
         player.each do |label, data|
-          stats << 
+          stats[label] = data
         end
       end
     end
